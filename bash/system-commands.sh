@@ -18,7 +18,7 @@ free -h
 # Show available disk space
 df -h
 
-# GPU stuff (nvidia)
+# GPU stuff (only if you have an NVIDIA GPU)
 nvidia-smi
 
 # Change permissions of files
