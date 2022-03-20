@@ -37,3 +37,8 @@ jupyter notebook
 ```
 
 and open `Bash For Text Processing Introduction.ipynb`
+
+# Useful resources
+
+- [The Missing Semester](https://www.youtube.com/watch?v=Z56Jmr9Z34Q&list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J)
+- [Matt Might Blog](https://matt.might.net/articles/bash-by-example/)
