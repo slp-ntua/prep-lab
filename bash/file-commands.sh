@@ -6,7 +6,7 @@ grep "toyota.*sedan" auto.csv # regex
 cut -d, -f26 auto.csv
 
 # Sort file
-cut -d -f26 auto.csv | sort -n
+cut -d, -f26 auto.csv | sort -n
 sort auto.csv
 sort -nr -k26 -t, auto.csv
 sort -nr -k26 -t, auto.csv | grep bmw
@@ -25,9 +25,9 @@ diff auto.csv auto1.csv
 diff auto1.csv auto2.csv
 
 # Awk for more complicated operations
-awk -F, '$4 > 0.8' auto.csv
+awk -F, '$26 < 10000' auto.csv  # Find cheap cars
 awk 'BEGIN{FS=","; OFS="\t"} {print $1,$2,$3,$4}' auto.csv
-awk -F, 'BEGIN {OFS=","} {$4=$4 * 100; print}' auto.csv
+awk -F, 'BEGIN {OFS=","} {$26=$26 * 0.93; print}' auto.csv  #Convert dollar to euro
 
 
 # Complicated regex based processing. Convert CSV rows to latex table
